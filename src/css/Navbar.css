@@ -1,0 +1,21 @@
+.navbar {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 6vh;
+  background-color: var(--primary-color);
+  border-bottom: var(--border);
+  display: flex;
+}
+
+.navbar-brand {
+  border-right: var(--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 100%;
+  padding: 0 1vw;
+}

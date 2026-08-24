@@ -2,12 +2,16 @@
   position: fixed;
   inset: 0;
   width: 100%;
-  height: 6vh;
+  height: 8vh;
   background-color: var(--primary-color);
   border-bottom: var(--border);
+}
+.nav-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
   display: flex;
 }
-
 .navbar-brand {
   border-right: var(--border);
   display: flex;
@@ -18,4 +22,60 @@
 .navbar-logo {
   height: 100%;
   padding: 0 1vw;
+}
+
+.navbar-links {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+}
+.nav-btn {
+  padding: clamp(3px, 0.3vw, 9px) clamp(6px, 0.9vw, 12px);
+  border: none;
+  outline: 2px solid var(--primary-color);
+  border-radius: 6px;
+  display: block;
+  transition: outline 0.16s ease;
+}
+.nav-btn:hover {
+  cursor: pointer;
+  outline: 2px solid var(--secondary-color);
+}
+.nav-burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    border-right: none;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .kunsthuis-btn {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .nav-burger {
+    display: flex;
+    background: none;
+    height: 100%;
+    width: auto;
+    border: none;
+    margin-left: auto;
+    align-items: center;
+    cursor: pointer;
+  }
+  .nav-burger img {
+    height: 80%;
+    width: auto;
+    border-radius: 6px;
+  }
+  .nav-burger img:active {
+    outline: var(--border);
+  }
 }

@@ -1,8 +1,10 @@
 .navbar {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: var(--primary-color);
+  z-index: 10;
 }
 .nav-container {
   width: 100%;
@@ -80,14 +82,13 @@
     font-size: larger;
   }
   .nav-burger {
-    display: flex;
-    background: none;
+    display: inline-block;
+    position: absolute;
+    right: 0;
     height: 100%;
-    width: auto;
     border: none;
-    margin-left: auto;
     align-items: center;
-    cursor: pointer;
+    background: none;
   }
   .nav-burger img {
     height: 80%;

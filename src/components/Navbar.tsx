@@ -32,7 +32,6 @@ function NavBar() {
             <img className="navbar-logo" src="/nav/logo.svg" alt="" />
           </a>
         </div>
-
         <div className="navbar-links">
           <a href="" className="nav-btn kunsthuis-btn">
             kunsthuis

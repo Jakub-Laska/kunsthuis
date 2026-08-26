@@ -53,6 +53,11 @@ function App() {
     if (!currentPage) return;
 
     setHeight(currentPage.scrollHeight);
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
   }, [currentIndex, isHorizontalPage]);
 
   return (

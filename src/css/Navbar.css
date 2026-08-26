@@ -34,16 +34,8 @@
   gap: 3vw;
 }
 .nav-btn {
-  padding: clamp(3px, 0.3vw, 9px) clamp(6px, 0.9vw, 12px);
   border: none;
-  outline: 2px solid var(--primary-color);
-  border-radius: 6px;
   display: block;
-  transition: outline 0.16s ease;
-}
-.nav-btn:hover {
-  cursor: pointer;
-  outline: 2px solid var(--secondary-color);
 }
 .nav-burger {
   display: none;

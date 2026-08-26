@@ -8,6 +8,7 @@ import Gallery from "./pages/Gallery";
 import Rules from "./pages/Rules";
 
 import NavBar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 import "./css/App.css";
 
@@ -85,7 +86,9 @@ function App() {
                   pageRefs.current[index] = element;
                 }}
               >
-                {page.element}
+                <div className="page-content">{page.element}</div>
+
+                <Footer />
               </div>
             ))}
           </div>

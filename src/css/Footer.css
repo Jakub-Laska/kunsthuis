@@ -1,0 +1,34 @@
+.footer {
+  width: 100%;
+  display: grid;
+}
+.footer-container {
+  width: 100%;
+  height: 100%;
+}
+.footer-row {
+  border-top: var(--border);
+  min-height: 8vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  padding: 1.5vh 0;
+}
+.footer-row.design {
+  min-height: 4vh;
+}
+.footer-row.design a {
+  font-size: clamp(16px, 1.5vw, 32px);
+}
+@media screen and (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+    text-align: center;
+    padding: 3vh 0;
+  }
+  .footer-row.design {
+    min-height: 2vh;
+  }
+}

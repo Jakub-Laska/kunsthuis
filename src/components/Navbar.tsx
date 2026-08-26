@@ -67,19 +67,19 @@ function NavBar() {
         </div>
 
         <div className="navbar-links">
-          <Link to="/" className="nav-btn kunsthuis-btn">
+          <Link to="/" className="nav-btn kunsthuis-btn hover-animation">
             kunsthuis
           </Link>
 
-          <Link to="/events" className="nav-btn">
+          <Link to="/events" className="nav-btn hover-animation">
             evenementen
           </Link>
 
-          <Link to="/artists" className="nav-btn">
+          <Link to="/artists" className="nav-btn hover-animation">
             kunstenaars
           </Link>
 
-          <Link to="/gallery" className="nav-btn">
+          <Link to="/gallery" className="nav-btn hover-animation">
             galerie
           </Link>
 

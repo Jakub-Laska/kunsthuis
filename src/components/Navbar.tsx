@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../css/Navbar.css";
 
 function NavBar() {
@@ -12,13 +13,45 @@ function NavBar() {
     <nav className="navbar">
       <div className={`nav-curtain ${menuOpen ? "active" : ""}`}>
         <div className="curtain-container">
-          <a href="" className="nav-btn curtain-btn kunsthuis-btn">
+          <Link
+            to="/"
+            className="nav-btn curtain-btn kunsthuis-btn"
+            onClick={() => setMenuOpen(false)}
+          >
             kunsthuis
-          </a>
-          <a className="nav-btn curtain-btn event-btn">evenementen</a>
-          <a className="nav-btn curtain-btn">kunstenaars</a>
-          <a className="nav-btn curtain-btn">galerie</a>
-          <a className="nav-btn curtain-btn">huisregels</a>
+          </Link>
+
+          <Link
+            to="/events"
+            className="nav-btn curtain-btn"
+            onClick={() => setMenuOpen(false)}
+          >
+            evenementen
+          </Link>
+
+          <Link
+            to="/artists"
+            className="nav-btn curtain-btn"
+            onClick={() => setMenuOpen(false)}
+          >
+            kunstenaars
+          </Link>
+
+          <Link
+            to="/gallery"
+            className="nav-btn curtain-btn"
+            onClick={() => setMenuOpen(false)}
+          >
+            galerie
+          </Link>
+
+          <Link
+            to="/rules"
+            className="nav-btn curtain-btn"
+            onClick={() => setMenuOpen(false)}
+          >
+            huisregels
+          </Link>
 
           <button className="nav-exit nav-toggle" onClick={handleClick}>
             <img src="/nav/exit.svg" alt="" />
@@ -28,17 +61,27 @@ function NavBar() {
 
       <div className="nav-container">
         <div className="navbar-brand">
-          <a href="" className="navbar-logo-link">
+          <Link to="/" className="navbar-logo-link">
             <img className="navbar-logo" src="/nav/logo.svg" alt="" />
-          </a>
+          </Link>
         </div>
+
         <div className="navbar-links">
-          <a href="" className="nav-btn kunsthuis-btn">
+          <Link to="/" className="nav-btn kunsthuis-btn">
             kunsthuis
-          </a>
-          <a className="nav-btn">evenementen</a>
-          <a className="nav-btn">kunstenaars</a>
-          <a className="nav-btn">galerie</a>
+          </Link>
+
+          <Link to="/events" className="nav-btn">
+            evenementen
+          </Link>
+
+          <Link to="/artists" className="nav-btn">
+            kunstenaars
+          </Link>
+
+          <Link to="/gallery" className="nav-btn">
+            galerie
+          </Link>
 
           <button className="nav-burger nav-toggle" onClick={handleClick}>
             <img src="/nav/burger.svg" alt="" />

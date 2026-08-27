@@ -9,6 +9,7 @@ import Rules from "./pages/Rules";
 
 import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Cursor from "./components/Cursor";
 
 import "./css/App.css";
 
@@ -63,6 +64,7 @@ function App() {
 
   return (
     <>
+      <Cursor />
       <NavBar />
 
       {isHorizontalPage ? (

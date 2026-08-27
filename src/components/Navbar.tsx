@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../css/Navbar.css";
 
 function NavBar() {
@@ -67,21 +67,41 @@ function NavBar() {
         </div>
 
         <div className="navbar-links">
-          <Link to="/" className="nav-btn kunsthuis-btn hover-animation">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `nav-btn kunsthuis-btn hover-animation ${isActive ? "active" : ""}`
+            }
+          >
             kunsthuis
-          </Link>
+          </NavLink>
 
-          <Link to="/events" className="nav-btn hover-animation">
+          <NavLink
+            to="/events"
+            className={({ isActive }) =>
+              `nav-btn hover-animation ${isActive ? "active" : ""}`
+            }
+          >
             evenementen
-          </Link>
+          </NavLink>
 
-          <Link to="/artists" className="nav-btn hover-animation">
+          <NavLink
+            to="/artists"
+            className={({ isActive }) =>
+              `nav-btn hover-animation ${isActive ? "active" : ""}`
+            }
+          >
             kunstenaars
-          </Link>
+          </NavLink>
 
-          <Link to="/gallery" className="nav-btn hover-animation">
+          <NavLink
+            to="/gallery"
+            className={({ isActive }) =>
+              `nav-btn hover-animation ${isActive ? "active" : ""}`
+            }
+          >
             galerie
-          </Link>
+          </NavLink>
 
           <button className="nav-burger nav-toggle" onClick={handleClick}>
             <img src="/nav/burger.svg" alt="" />

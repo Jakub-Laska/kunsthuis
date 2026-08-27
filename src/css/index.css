@@ -45,7 +45,8 @@ body {
   transition: outline 0.16s ease;
   padding: clamp(3px, 0.3vw, 9px) clamp(6px, 0.9vw, 12px);
 }
-.hover-animation:hover {
+.hover-animation:hover,
+.nav-btn.active {
   cursor: pointer;
   outline: 2px solid var(--secondary-color);
 }

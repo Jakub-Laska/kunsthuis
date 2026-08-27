@@ -7,6 +7,7 @@
   height: 100%;
 }
 .footer-row {
+  margin-top: -1px;
   border-top: var(--border);
   min-height: 8vh;
   display: flex;

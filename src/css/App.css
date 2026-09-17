@@ -4,7 +4,9 @@ body,
   margin: 0;
   width: 100%;
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   overflow-x: hidden;
 }

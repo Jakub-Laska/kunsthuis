@@ -7,8 +7,8 @@ function Home() {
       <div className="grid-container">
         <div className="grid-left grid-column">
           <div className="grid-element">upcoming event</div>
-          <div className="grid-element">x</div>
-          <div className="grid-element">x</div>
+          <div className="grid-element diagonal"></div>
+          <div className="grid-element diagonal-two"></div>
         </div>
         <div className="grid-mid grid-column">
           <div className="grid-element">next event</div>
@@ -43,7 +43,13 @@ function Home() {
               huisregels
             </Link>
           </div>
-          <div className="grid-element">x</div>
+          <div className="grid-element">
+            <img
+              src="/home/home.jpg"
+              alt="Kunsthuis"
+              className="grunge-effect"
+            />
+          </div>
         </div>
       </div>
     </div>

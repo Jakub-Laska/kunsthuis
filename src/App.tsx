@@ -11,6 +11,8 @@ import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Cursor from "./components/Cursor";
 
+import { GrungeEffect } from "./utils/grungeEffect";
+
 import "./css/App.css";
 
 const pages = [
@@ -64,6 +66,7 @@ function App() {
 
   return (
     <>
+      <GrungeEffect />
       <Cursor />
       <NavBar />
 

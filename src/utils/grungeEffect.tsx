@@ -1,5 +1,3 @@
-// GrungeEffect.tsx
-
 export function GrungeEffect() {
   return (
     <>
@@ -13,7 +11,7 @@ export function GrungeEffect() {
             height="110%"
             colorInterpolationFilters="sRGB"
           >
-            {/* 1. ORIGINAL → GRAYSCALE */}
+            {/* 1. ORIGINAL - GRAYSCALE */}
             <feColorMatrix
               in="SourceGraphic"
               type="saturate"
@@ -47,7 +45,7 @@ export function GrungeEffect() {
               result="distorted"
             />
 
-            {/* 5. BLACK → CORNFLOWER BLUE */}
+            {/* 5. BLACK - CORNFLOWER BLUE */}
             <feComponentTransfer in="distorted" result="duotone">
               <feFuncR type="table" tableValues="0 0.392 0.392" />
               <feFuncG type="table" tableValues="0 0.584 0.584" />

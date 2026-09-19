@@ -3,7 +3,17 @@ import { Routes, Route, useLocation } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Events from "./pages/Events";
-import Artists from "./pages/Artists";
+import Artists from "./pages/Artists/Artists";
+import Rineke from "./pages/Artists/artists/Rineke";
+import Marlene from "./pages/Artists/artists/Marlene";
+import James from "./pages/Artists/artists/James";
+import Piet from "./pages/Artists/artists/Piet";
+import Hieronymus from "./pages/Artists/artists/Hieronymus";
+import Michael from "./pages/Artists/artists/Michael";
+import Vincent from "./pages/Artists/artists/Vincent";
+import Rene from "./pages/Artists/artists/Rene";
+import Wim from "./pages/Artists/artists/Wim";
+
 import Gallery from "./pages/Gallery";
 import Rules from "./pages/Rules";
 
@@ -92,8 +102,6 @@ function App() {
                 }}
               >
                 <div className="page-content">{page.element}</div>
-
-                <Footer />
               </div>
             ))}
           </div>
@@ -101,8 +109,18 @@ function App() {
       ) : (
         <Routes>
           <Route path="/rules" element={<Rules />} />
+          <Route path="/artists/rineke" element={<Rineke />} />
+          <Route path="/artists/marlene" element={<Marlene />} />
+          <Route path="/artists/james" element={<James />} />
+          <Route path="/artists/piet" element={<Piet />} />
+          <Route path="/artists/hieronymus" element={<Hieronymus />} />
+          <Route path="/artists/michael" element={<Michael />} />
+          <Route path="/artists/vincent" element={<Vincent />} />
+          <Route path="/artists/rene" element={<Rene />} />
+          <Route path="/artists/wim" element={<Wim />} />
         </Routes>
       )}
+      <Footer />
     </>
   );
 }

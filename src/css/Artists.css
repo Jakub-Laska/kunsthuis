@@ -1,0 +1,52 @@
+.grid-container-artists {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-column-artists {
+  display: grid;
+}
+.grid-element-artists {
+  min-height: 66vh;
+  position: relative;
+  overflow: hidden;
+  outline: var(--border);
+  outline-offset: -0.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+.grid-element-artists img {
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.grid-element-artists p {
+  opacity: 1;
+  transition: opacity 0.1s ease;
+}
+.grid-element-artists:hover p {
+  opacity: 0;
+}
+.grid-element-artists:hover img {
+  opacity: 1;
+}
+
+.rineke {
+  object-position: 50% 100%;
+}
+.piet {
+  object-position: 50% 20%;
+}
+.hieronymus,
+.james {
+  object-position: 50% 10%;
+}
+@media (max-width: 768px) {
+  .grid-containe-artists {
+    grid-template-columns: 1fr;
+  }
+}

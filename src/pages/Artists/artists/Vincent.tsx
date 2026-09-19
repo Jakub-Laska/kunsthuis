@@ -1,6 +1,6 @@
 function Vincent() {
   return (
-    <div className="vincent">
+    <div className="vincent artist-page">
       <h1>
         Vincent
         <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni

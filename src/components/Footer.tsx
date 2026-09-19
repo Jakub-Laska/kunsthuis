@@ -6,13 +6,6 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-row">
           <a
-            href="https://www.facebook.com/pages/Kunsthuis%20Amsterdam/1050494525061831/#"
-            target="_blank"
-            className="footer-social-link hover-animation"
-          >
-            facebook
-          </a>
-          <a
             href="https://www.instagram.com/kunsthuizen/"
             target="_blank"
             className="footer-social-link hover-animation"
@@ -20,11 +13,11 @@ function Footer() {
             instagram
           </a>
           <a
-            href="https://kmska.be/en/homepage?gad_source=1&gad_campaignid=21824782930&gbraid=0AAAAACvhCAwXZmqBhIGg4hFmC6FYUhhh4&gclid=Cj0KCQjwnbrUBhDOARIsAKKhPpcwRg2QusCpT3ebHbB20CIk0Y2zxgI0yhKJYwBqRhTwYNY0zer2yn0aAlmxEALw_wcB"
+            href="https://www.facebook.com/pages/Kunsthuis%20Amsterdam/1050494525061831/#"
             target="_blank"
             className="footer-social-link hover-animation"
           >
-            kmska
+            facebook
           </a>
           <a
             href="https://www.boijmans.nl/"
@@ -32,6 +25,13 @@ function Footer() {
             className="footer-social-link hover-animation"
           >
             boijmans
+          </a>
+          <a
+            href="https://kmska.be/en/homepage?gad_source=1&gad_campaignid=21824782930&gbraid=0AAAAACvhCAwXZmqBhIGg4hFmC6FYUhhh4&gclid=Cj0KCQjwnbrUBhDOARIsAKKhPpcwRg2QusCpT3ebHbB20CIk0Y2zxgI0yhKJYwBqRhTwYNY0zer2yn0aAlmxEALw_wcB"
+            target="_blank"
+            className="footer-social-link hover-animation"
+          >
+            kmska
           </a>
           <a
             href="https://kunst.nl"

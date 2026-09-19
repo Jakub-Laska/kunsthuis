@@ -1,6 +1,6 @@
 function Rineke() {
   return (
-    <div className="rineke">
+    <div className="rineke artist-page">
       <h1>
         Rineke
         <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni

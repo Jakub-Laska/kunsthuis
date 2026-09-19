@@ -1,6 +1,6 @@
 function Marlene() {
   return (
-    <div className="marlene">
+    <div className="marlene artist-page">
       <h1>
         Marlene
         <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni

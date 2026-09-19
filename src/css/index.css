@@ -8,6 +8,8 @@
 * {
   text-transform: uppercase;
   font-family: "Barlow Condensed", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
   font-weight: 800;
   letter-spacing: 0.3vw;
   font-size: clamp(26px, 2vw, 64px);

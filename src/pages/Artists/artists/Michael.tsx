@@ -1,6 +1,6 @@
 function Michael() {
   return (
-    <div className="michael">
+    <div className="michael artist-page">
       <h1>
         Michael
         <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni

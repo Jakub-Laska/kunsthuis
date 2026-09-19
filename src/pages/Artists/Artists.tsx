@@ -18,13 +18,13 @@ const artists = [
     name: "Vincent van Gogh",
     slug: "vincent",
     image: "/artists/vincent.jpg",
-    className: "",
+    className: "vincent",
   },
   {
     name: "Marlene Dumas",
     slug: "marlene",
     image: "/artists/marlene.jpeg",
-    className: "",
+    className: "marlene",
   },
   {
     name: "Hieronymus Bosch",
@@ -36,7 +36,7 @@ const artists = [
     name: "René Magritte",
     slug: "rene",
     image: "/artists/rene.webp",
-    className: "",
+    className: "rene",
   },
   {
     name: "James Ensor",
@@ -48,13 +48,13 @@ const artists = [
     name: "Michaël Borremans",
     slug: "michael",
     image: "/artists/michael.jpg",
-    className: "",
+    className: "michael",
   },
   {
     name: "Wim Delvoye",
     slug: "wim",
     image: "/artists/wim.webp",
-    className: "",
+    className: "wim",
   },
 ];
 

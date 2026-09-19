@@ -1,6 +1,6 @@
 function Rene() {
   return (
-    <div className="rene">
+    <div className="rene artist-page">
       <h1>
         Rene
         <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni

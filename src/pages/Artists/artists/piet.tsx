@@ -1,6 +1,6 @@
 function Piet() {
   return (
-    <div className="piet">
+    <div className="piet artist-page">
       <h1>
         Piet
         <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni

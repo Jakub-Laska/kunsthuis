@@ -1,6 +1,6 @@
 function James() {
   return (
-    <div className="james">
+    <div className="james artist-page">
       <h1>
         James
         <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni

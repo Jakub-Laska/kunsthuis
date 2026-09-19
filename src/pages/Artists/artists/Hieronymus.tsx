@@ -1,6 +1,6 @@
 function Hieronymus() {
   return (
-    <div className="hieronymus">
+    <div className="hieronymus artist-page">
       <h1>
         Hieronymus
         <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni

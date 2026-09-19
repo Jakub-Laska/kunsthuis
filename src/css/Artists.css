@@ -22,13 +22,14 @@
 .grid-element-artists img {
   z-index: -1;
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.3s ease;
 }
 .grid-element-artists p {
   opacity: 1;
-  transition: opacity 0.1s ease;
+  transition: opacity 0.3s ease;
 }
 .grid-element-artists:hover p {
+  transition: opacity 0s;
   opacity: 0;
 }
 .grid-element-artists:hover img {
@@ -36,17 +37,20 @@
 }
 
 .rineke {
-  object-position: 50% 100%;
+  object-position: 50% 100% !important;
 }
 .piet {
-  object-position: 50% 20%;
+  object-position: 50% 10% !important;
 }
 .hieronymus,
 .james {
-  object-position: 50% 10%;
+  object-position: 50% 10% !important;
 }
 @media (max-width: 768px) {
-  .grid-containe-artists {
-    grid-template-columns: 1fr;
+  .grid-container-artists {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .grid-element-artists img {
+    display: none;
   }
 }

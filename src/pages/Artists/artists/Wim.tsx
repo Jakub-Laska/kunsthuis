@@ -1,6 +1,6 @@
 function Wim() {
   return (
-    <div className="wim">
+    <div className="wim artist-page">
       <h1>
         Wim
         <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni

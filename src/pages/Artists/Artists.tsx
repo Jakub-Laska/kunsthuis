@@ -3,58 +3,58 @@ import "../../css/Artists.css";
 
 const artists = [
   {
-    name: "Rineke Dijkstra",
-    slug: "Rineke",
-    image: "/artists/rineke.jpg",
-    className: "rineke",
-  },
-  {
-    name: "Piet Mondriaan",
-    slug: "piet",
-    image: "/artists/piet.jpg",
-    className: "piet",
-  },
-  {
-    name: "Vincent van Gogh",
-    slug: "vincent",
-    image: "/artists/vincent.jpg",
-    className: "vincent",
-  },
-  {
-    name: "Marlene Dumas",
-    slug: "marlene",
-    image: "/artists/marlene.jpeg",
-    className: "marlene",
-  },
-  {
     name: "Hieronymus Bosch",
     slug: "hieronymus",
-    image: "/artists/hieronymus.jpg",
+    image: "/artists/main/hieronymus.webp",
     className: "hieronymus",
+  },
+  {
+    name: "Michaël Borremans",
+    slug: "michael",
+    image: "/artists/main/michael.webp",
+    className: "michael",
   },
   {
     name: "René Magritte",
     slug: "rene",
-    image: "/artists/rene.webp",
+    image: "/artists/main/rene.webp",
     className: "rene",
   },
   {
     name: "James Ensor",
     slug: "james",
-    image: "/artists/james.jpg",
+    image: "/artists/main/james.webp",
     className: "james",
   },
   {
-    name: "Michaël Borremans",
-    slug: "michael",
-    image: "/artists/michael.jpg",
-    className: "michael",
+    name: "Piet Mondriaan",
+    slug: "piet",
+    image: "/artists/main/piet.webp",
+    className: "piet",
   },
   {
-    name: "Wim Delvoye",
-    slug: "wim",
-    image: "/artists/wim.webp",
-    className: "wim",
+    name: "Vincent van Gogh",
+    slug: "vincent",
+    image: "/artists/main/vincent.webp",
+    className: "vincent",
+  },
+  {
+    name: "Marlene Dumas",
+    slug: "marlene",
+    image: "/artists/main/marlene.webp",
+    className: "marlene",
+  },
+  {
+    name: "Rineke Dijkstra",
+    slug: "Rineke",
+    image: "/artists/main/rineke.webp",
+    className: "rineke",
+  },
+  {
+    name: "Johannes Vermeer",
+    slug: "johannes",
+    image: "/artists/main/johannes.webp",
+    className: "johannes",
   },
 ];
 

@@ -39,13 +39,6 @@
 .rineke {
   object-position: 50% 100% !important;
 }
-.piet {
-  object-position: 50% 10% !important;
-}
-.hieronymus,
-.james {
-  object-position: 50% 10% !important;
-}
 @media (max-width: 768px) {
   .grid-container-artists {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

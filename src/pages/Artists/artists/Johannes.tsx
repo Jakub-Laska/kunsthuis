@@ -1,8 +1,8 @@
-function Wim() {
+function Johannes() {
   return (
-    <div className="wim artist-page">
+    <div className="johannes artist-page">
       <h1>
-        Wim
+        Johannes Vermeer
         <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
         voluptate corrupti, cupiditate reiciendis praesentium repellat et, porro
         cum nostrum facilis numquam ducimus natus animi ratione optio nihil
@@ -27,4 +27,4 @@ function Wim() {
   );
 }
 
-export default Wim;
+export default Johannes;

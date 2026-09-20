@@ -12,7 +12,7 @@ import Hieronymus from "./pages/Artists/artists/Hieronymus";
 import Michael from "./pages/Artists/artists/Michael";
 import Vincent from "./pages/Artists/artists/Vincent";
 import Rene from "./pages/Artists/artists/Rene";
-import Wim from "./pages/Artists/artists/Wim";
+import Wim from "./pages/Artists/artists/Johannes";
 
 import Gallery from "./pages/Gallery";
 import Rules from "./pages/Rules";

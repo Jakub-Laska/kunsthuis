@@ -66,13 +66,12 @@ function App() {
       window.scrollTo(0, 0);
       return;
     }
-
     const currentPage = pageRefs.current[currentIndex];
 
     if (!currentPage) return;
 
     requestAnimationFrame(() => {
-      setHeight(currentPage.scrollHeight);
+      setHeight(currentPage.offsetHeight);
 
       window.scrollTo({
         top: 0,
@@ -87,6 +86,7 @@ function App() {
       <GrungeEffect />
       <Cursor />
       <NavBar />
+      <div className="nav-spacer" />
 
       {isHorizontalPage ? (
         <main

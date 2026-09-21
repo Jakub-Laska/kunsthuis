@@ -51,6 +51,7 @@
   height: 100%;
   position: absolute;
   inset: 0;
+  z-index: -1;
 }
 .grid-element-artists:has(.artist-img.active) .image-canvas {
   opacity: 1;

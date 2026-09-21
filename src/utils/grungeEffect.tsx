@@ -1,7 +1,12 @@
 export function GrungeEffect() {
   return (
     <>
-      <svg width="0" height="0" aria-hidden="true">
+      <svg
+        width="0"
+        height="0"
+        aria-hidden="true"
+        style={{ position: "absolute" }}
+      >
         <defs>
           <filter
             id="grunge-effect"

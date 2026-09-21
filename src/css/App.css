@@ -46,3 +46,6 @@ body {
   position: absolute;
   inset: 0;
 }
+.nav-spacer {
+  height: 7.94vh;
+}

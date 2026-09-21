@@ -17,6 +17,4 @@ buttton outline is not centered
 
 text has more margin at the bottom
 
-bigger distortion and grain grunge
-
 GAP AT THE TOP!!!!!!!!!!!

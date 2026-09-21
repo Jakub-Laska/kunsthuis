@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import "../../css/Artists.css";
 
 const artists = [
@@ -59,6 +60,40 @@ const artists = [
 ];
 
 function Artists() {
+  useEffect(() => {
+    const elements = document.querySelectorAll<HTMLElement>(
+      ".grid-element-artists",
+    );
+
+    const handlers = Array.from(elements).map((element) => {
+      const image = element.querySelector<HTMLImageElement>(".artist-img");
+
+      if (!image) return null;
+
+      const enter = () => {
+        image.classList.add("active");
+      };
+
+      const leave = () => {
+        image.classList.remove("active");
+      };
+
+      element.addEventListener("mouseenter", enter);
+      element.addEventListener("mouseleave", leave);
+
+      return { element, enter, leave };
+    });
+
+    return () => {
+      handlers.forEach((handler) => {
+        if (!handler) return;
+
+        handler.element.removeEventListener("mouseenter", handler.enter);
+        handler.element.removeEventListener("mouseleave", handler.leave);
+      });
+    };
+  }, []);
+
   return (
     <div className="home">
       <div className="grid-container-artists">
@@ -66,12 +101,12 @@ function Artists() {
           <Link
             key={artist.slug}
             to={`./artists/${artist.slug}`}
-            className="grid-element-artists"
+            className="grid-element-artists grunge-effect"
           >
             <p>{artist.name}</p>
 
             <img
-              className={`grunge-effect ${artist.className}`}
+              className={`distorted distorted-normal artist-img  ${artist.className}`}
               src={artist.image}
               alt={artist.name}
             />

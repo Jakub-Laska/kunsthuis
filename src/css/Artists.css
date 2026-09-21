@@ -39,6 +39,27 @@
 .rineke {
   object-position: 50% 100% !important;
 }
+
+.grid-element-artists .image-canvas {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.image-canvas {
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+.grid-element-artists:has(.artist-img.active) .image-canvas {
+  opacity: 1;
+}
+
+.grid-element-artists:has(.artist-img.active) p {
+  opacity: 0;
+}
+
 @media (max-width: 768px) {
   .grid-container-artists {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

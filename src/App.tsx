@@ -22,6 +22,7 @@ import Footer from "./components/Footer";
 import Cursor from "./components/Cursor";
 
 import { GrungeEffect } from "./utils/grungeEffect";
+import { initImageDistortions } from "./utils/ImageDistortion";
 
 import "./css/App.css";
 
@@ -49,6 +50,10 @@ function App() {
 
   const pageRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [height, setHeight] = useState<number | null>(null);
+
+  useEffect(() => {
+    return initImageDistortions();
+  }, [location.pathname]);
 
   const currentIndex = pages.findIndex(
     (page) => page.path === location.pathname,

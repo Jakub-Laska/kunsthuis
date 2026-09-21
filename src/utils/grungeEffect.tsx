@@ -53,7 +53,6 @@ export function GrungeEffect() {
             </feComponentTransfer>
 
             {/* 6. MIX DUOTONE WITH ORIGINAL */}
-            <feBlend in="duotone" in2="SourceGraphic" mode="normal" />
           </filter>
         </defs>
       </svg>
@@ -61,12 +60,6 @@ export function GrungeEffect() {
       <style>{`
         .grunge-effect {
           filter: url("#grunge-effect");
-          object-fit: cover;
-          object-position: 50% 50%;
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          inset: 0;
         }
       `}</style>
     </>

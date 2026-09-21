@@ -43,11 +43,11 @@ function Home() {
               huisregels
             </Link>
           </div>
-          <div className="grid-element">
+          <div className="grid-element grunge-effect">
             <img
               src="/home/home.jpg"
               alt="Kunsthuis"
-              className="grunge-effect"
+              className="distorted distorted-small"
             />
           </div>
         </div>

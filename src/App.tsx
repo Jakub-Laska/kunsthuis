@@ -12,7 +12,7 @@ import Hieronymus from "./pages/Artists/artists/Hieronymus";
 import Michael from "./pages/Artists/artists/Michael";
 import Vincent from "./pages/Artists/artists/Vincent";
 import Rene from "./pages/Artists/artists/Rene";
-import Wim from "./pages/Artists/artists/Johannes";
+import Johannes from "./pages/Artists/artists/Johannes";
 
 import Gallery from "./pages/Gallery";
 import Rules from "./pages/Rules";
@@ -125,7 +125,7 @@ function App() {
           <Route path="/artists/michael" element={<Michael />} />
           <Route path="/artists/vincent" element={<Vincent />} />
           <Route path="/artists/rene" element={<Rene />} />
-          <Route path="/artists/wim" element={<Wim />} />
+          <Route path="/artists/johannes" element={<Johannes />} />
         </Routes>
       )}
       <Footer />

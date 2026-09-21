@@ -9,6 +9,3 @@ event fill text new pages all events event page
 calendar admin panel
 
 /////////
-buttton outline is not centered
-
-text has more margin at the bottom

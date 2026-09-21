@@ -46,7 +46,8 @@
     transparent calc(50% + 1px)
   );
 }
-.grid-element.diagonal-two {
+.grid-element.diagonal-two,
+.grid-element-artists.diagonal-two {
   background:
     linear-gradient(
       to bottom right,
@@ -60,6 +61,14 @@
       black 50%,
       transparent calc(50% + 1px)
     );
+}
+.grid-element-artists.diagonal-two p,
+.grid-element-artists.diagonal-two img {
+  opacity: 0;
+  visibility: hidden;
+}
+.grid-element-artists.diagonal-two {
+  pointer-events: none;
 }
 .grid-element:has(button, a) * {
   outline: none;

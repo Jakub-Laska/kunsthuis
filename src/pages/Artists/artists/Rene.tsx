@@ -1,3 +1,5 @@
+import { ArtistsGrid } from "../ArtistsGrid";
+
 function Rene() {
   return (
     <div className="rene artist-page">
@@ -23,6 +25,7 @@ function Rene() {
         dignissimos nisi consequuntur dicta recusandae nemo, atque
         exercitationem, iste animi, inventore, vitae aspernatur ut.
       </h1>
+      <ArtistsGrid currentSlug="rene" small />
     </div>
   );
 }

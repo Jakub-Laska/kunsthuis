@@ -1,3 +1,5 @@
+import { ArtistsGrid } from "../ArtistsGrid";
+
 function Michael() {
   return (
     <div className="michael artist-page">
@@ -23,6 +25,7 @@ function Michael() {
         dignissimos nisi consequuntur dicta recusandae nemo, atque
         exercitationem, iste animi, inventore, vitae aspernatur ut.
       </h1>
+      <ArtistsGrid currentSlug="michael" small />
     </div>
   );
 }

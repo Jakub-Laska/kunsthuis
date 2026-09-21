@@ -19,6 +19,9 @@
   text-align: center;
   z-index: 1;
 }
+.grid-container-artists-small .grid-element-artists {
+  min-height: 33vh;
+}
 .grid-element-artists img {
   z-index: -1;
   opacity: 0;
@@ -34,10 +37,6 @@
 }
 .grid-element-artists:hover img {
   opacity: 1;
-}
-
-.rineke {
-  object-position: 50% 100% !important;
 }
 
 .grid-element-artists .image-canvas {

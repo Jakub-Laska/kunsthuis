@@ -1,3 +1,5 @@
+import { ArtistsGrid } from "../ArtistsGrid";
+
 function Rineke() {
   return (
     <div className="rineke artist-page">
@@ -23,6 +25,7 @@ function Rineke() {
         dignissimos nisi consequuntur dicta recusandae nemo, atque
         exercitationem, iste animi, inventore, vitae aspernatur ut.
       </h1>
+      <ArtistsGrid currentSlug="rene" small />
     </div>
   );
 }

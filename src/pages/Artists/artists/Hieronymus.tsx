@@ -1,3 +1,5 @@
+import { ArtistsGrid } from "../ArtistsGrid";
+
 function Hieronymus() {
   return (
     <div className="hieronymus artist-page">
@@ -23,6 +25,8 @@ function Hieronymus() {
         dignissimos nisi consequuntur dicta recusandae nemo, atque
         exercitationem, iste animi, inventore, vitae aspernatur ut.
       </h1>
+
+      <ArtistsGrid currentSlug="hieronymus" small />
     </div>
   );
 }

@@ -19,10 +19,10 @@ const PRESETS: Record<string, DistortionPreset> = {
     aberration: 0.45,
   },
   normal: {
-    gridSize: 12,
-    mouseRadius: 0.09,
+    gridSize: 9,
+    mouseRadius: 0.05,
     strength: 0.07,
-    relaxation: 0.995,
+    relaxation: 0.993,
     displacement: 0.07,
     aberration: 0.4,
   },
@@ -37,11 +37,11 @@ const PRESETS: Record<string, DistortionPreset> = {
   },
 
   heavy: {
-    gridSize: 128,
-    mouseRadius: 0.15,
-    strength: 0.09,
-    relaxation: 0.95,
-    displacement: 0.09,
+    gridSize: 36,
+    mouseRadius: 0.036,
+    strength: 0.12,
+    relaxation: 0.97,
+    displacement: 0.12,
     aberration: 0.3,
   },
 

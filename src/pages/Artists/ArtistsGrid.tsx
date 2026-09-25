@@ -3,57 +3,57 @@ import { useEffect } from "react";
 
 const artists = [
   {
-    name: "Hieronymus Bosch",
+    name: "Jheronimus Bosch",
     slug: "hieronymus",
-    image: "/artists/main/hieronymus.webp",
+    image: "/artists/grid/hieronymus.webp",
     className: "hieronymus",
   },
   {
     name: "Michaël Borremans",
     slug: "michael",
-    image: "/artists/main/michael.webp",
+    image: "/artists/grid/michael.webp",
     className: "michael",
   },
   {
     name: "René Magritte",
     slug: "rene",
-    image: "/artists/main/rene.webp",
+    image: "/artists/grid/rene.webp",
     className: "rene",
   },
   {
     name: "James Ensor",
     slug: "james",
-    image: "/artists/main/james.webp",
+    image: "/artists/grid/james.webp",
     className: "james",
   },
   {
     name: "Piet Mondriaan",
     slug: "piet",
-    image: "/artists/main/piet.webp",
+    image: "/artists/grid/piet.webp",
     className: "piet",
   },
   {
     name: "Vincent van Gogh",
     slug: "vincent",
-    image: "/artists/main/vincent.webp",
+    image: "/artists/grid/vincent.webp",
     className: "vincent",
   },
   {
     name: "Marlene Dumas",
     slug: "marlene",
-    image: "/artists/main/marlene.webp",
+    image: "/artists/grid/marlene.webp",
     className: "marlene",
   },
   {
     name: "Rineke Dijkstra",
     slug: "rineke",
-    image: "/artists/main/rineke.webp",
+    image: "/artists/grid/rineke.webp",
     className: "rineke",
   },
   {
     name: "Johannes Vermeer",
     slug: "johannes",
-    image: "/artists/main/johannes.webp",
+    image: "/artists/grid/johannes.webp",
     className: "johannes",
   },
 ];

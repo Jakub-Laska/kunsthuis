@@ -38,7 +38,8 @@ body {
   flex: 1;
 }
 .grid-element img,
-.grid-element-artists img {
+.grid-element-artists img,
+.grid-element-artist-page img {
   object-fit: cover;
   object-position: 50% 50%;
   width: 100%;

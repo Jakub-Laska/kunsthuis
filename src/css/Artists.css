@@ -19,10 +19,11 @@
   text-align: center;
   z-index: 1;
 }
+
 .grid-container-artists-small .grid-element-artists {
   min-height: 33vh;
 }
-.grid-element-artists img {
+.grid-container-artists-small .grid-element-artists img {
   z-index: -1;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -65,13 +66,24 @@
   grid-template-columns: 1fr 1fr;
   width: 100vw;
 }
-.grid-element.artist {
+.grid-element-artist-page {
   min-height: 10vh;
+  position: relative;
+  overflow: hidden;
+  outline: var(--border);
+  outline-offset: -0.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
 }
 .artist-img {
   grid-row: 1/3;
   grid-column: 2;
   background-color: var(--primary-color);
+  min-height: 66vh;
 }
 .artist-para {
   font-size: clamp(13px, 1vw, 32px) !important;
@@ -81,18 +93,69 @@
   padding: 0 !important;
   padding-inline: 0.25em !important;
 }
+
+.artist-cards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+}
+.artist-button {
+  border-radius: 6px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: clamp(23px, 1.2vw, 42px) !important;
+  border: none;
+  display: block;
+  padding: clamp(3px, 0.3vw, 9px) clamp(6px, 0.9vw, 12px);
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.artist-button:hover {
+  transform: translateY(-3px);
+}
 .artist-gallery {
   grid-column: 1/3;
   min-height: 66vh !important;
 }
-.artist.diagonal-two {
+.grid-element-artist-page.diagonal-two {
   grid-column: 1/3;
 }
 @media (max-width: 768px) {
   .grid-container-artists {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+  .grid-container-artists-small {
+    grid-template-columns: 1fr;
+  }
   .grid-element-artists img {
     display: none;
+  }
+
+  .artist-grid-container {
+    grid-template-columns: 1fr;
+  }
+  .artist-title {
+    grid-row: 1;
+  }
+  .artist-img {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .artist-story {
+    grid-row: 3;
+  }
+  .artist-para {
+    font-size: clamp(18px, 1.5vw, 48px) !important;
+    padding: 1em !important;
+  }
+  .artist-cards {
+    grid-row: 4;
+    flex-direction: column;
+    padding: 3vh 0;
+    gap: 3vh;
   }
 }

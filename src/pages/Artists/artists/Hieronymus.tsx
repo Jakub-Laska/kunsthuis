@@ -4,18 +4,18 @@ function Hieronymus() {
   return (
     <div className="hieronymus artist-page">
       <div className="artist-grid-container">
-        <div className="grid-element artist artist-title">
+        <div className="grid-element-artist-page artist-title">
           <h1>Jheronimus Bosch</h1>
         </div>
-        <div className="grid-element artist grunge-effect artist-img">
+        <div className="grid-element-artist-page grunge-effect artist-img">
           <img
             src="/artists/profile/hieronymus.jpg"
-            alt="Kunsthuis"
+            alt=""
             className="distorted distorted-small"
           />
         </div>
 
-        <div className="grid-element artist">
+        <div className="grid-element-artist-page artist-story">
           <p className="artist-para">
             Jheronimus Bosch (ca. 1450-1516) was een Nederlandse schilder uit de
             Noordelijke Renaissance. Hij werd geboren en groeide op in
@@ -44,10 +44,44 @@ function Hieronymus() {
           </p>
         </div>
 
-        <div className="grid-element artist artist-cards">cards</div>
-        <div className="grid-element artist diagonal"></div>
-        <div className="grid-element artist artist-gallery">gallery</div>
-        <div className="grid-element artist diagonal-two"></div>
+        <div className="grid-element-artist-page artist-cards">
+          <a
+            href="https://artsandculture.google.com/entity/hieronim-bosch/m0cdn_"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="artist-button"
+          >
+            google arts
+          </a>
+          <a
+            href="https://commons.wikimedia.org/wiki/Jheronimus_Bosch"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="artist-button"
+          >
+            wikimedia
+          </a>
+          <a
+            href="https://nl.wikipedia.org/wiki/Jheronimus_Bosch"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="artist-button"
+          >
+            Wikipedia
+          </a>
+
+          <a
+            href="https://www.wikiart.org/en/hieronymus-bosch"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="artist-button"
+          >
+            wikiart
+          </a>
+        </div>
+        <div className="grid-element-artist-page diagonal"></div>
+        <div className="grid-element-artist-page artist-gallery">gallery</div>
+        <div className="grid-element-artist-page diagonal-two"></div>
       </div>
 
       <ArtistsGrid currentSlug="hieronymus" small />

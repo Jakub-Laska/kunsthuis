@@ -28,6 +28,7 @@
     flex-direction: column;
     text-align: center;
     padding: 3vh 0;
+    gap: 3vh;
   }
   .footer-row.design {
     min-height: 2vh;

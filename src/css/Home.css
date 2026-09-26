@@ -35,10 +35,11 @@
   text-align: center;
   z-index: 1;
 }
-.grid-element img {
+.grid-element img,
+.grid-element-artist-page img {
   z-index: -1;
 }
-.grid-element.diagonal {
+.diagonal {
   background: linear-gradient(
     to bottom right,
     transparent calc(50% - 1px),
@@ -46,8 +47,8 @@
     transparent calc(50% + 1px)
   );
 }
-.grid-element.diagonal-two,
-.grid-element-artists.diagonal-two {
+.diagonal-two,
+.diagonal-two {
   background:
     linear-gradient(
       to bottom right,

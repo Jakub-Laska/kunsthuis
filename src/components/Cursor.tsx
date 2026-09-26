@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "../css/Cursor.css";
+
 export default function Cursor() {
   const cursorRef = useRef<HTMLDivElement | null>(null);
 
@@ -14,6 +15,12 @@ export default function Cursor() {
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
+    const cursor = cursorRef.current;
+
+    // Force cursor to be visible when clicking
+    cursor?.classList.remove("fade");
+    cursor?.classList.add("visible");
+
     setClicked(false);
 
     requestAnimationFrame(() => {
@@ -40,14 +47,7 @@ export default function Cursor() {
 
       if (interactive) {
         cursorRef.current?.classList.add("fade");
-      }
-    };
-
-    const handleMouseOut = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      const interactive = target.closest("a, button");
-
-      if (interactive) {
+      } else {
         cursorRef.current?.classList.remove("fade");
       }
     };
@@ -65,14 +65,12 @@ export default function Cursor() {
     };
 
     document.addEventListener("mouseover", handleMouseOver);
-    document.addEventListener("mouseout", handleMouseOut);
 
     window.addEventListener("mouseout", handleWindowMouseOut);
     window.addEventListener("mouseover", handleWindowMouseOver);
 
     return () => {
       document.removeEventListener("mouseover", handleMouseOver);
-      document.removeEventListener("mouseout", handleMouseOut);
 
       window.removeEventListener("mouseout", handleWindowMouseOut);
       window.removeEventListener("mouseover", handleWindowMouseOver);
@@ -92,9 +90,13 @@ export default function Cursor() {
       isMobile = e.matches;
 
       if (isMobile && isRunning.current) {
-        cancelAnimationFrame(rafId.current!);
+        if (rafId.current) {
+          cancelAnimationFrame(rafId.current);
+        }
 
         cursor.classList.remove("visible");
+        cursor.classList.remove("fade");
+
         isRunning.current = false;
       } else if (!isMobile) {
         enableCursor();
@@ -110,7 +112,6 @@ export default function Cursor() {
 
     const followCursor = () => {
       circleX.current += (mouseX.current - circleX.current) * 0.2;
-
       circleY.current += (mouseY.current - circleY.current) * 0.2;
 
       cursor.style.setProperty("--cursorX", `${Math.round(circleX.current)}px`);

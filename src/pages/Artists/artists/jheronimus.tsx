@@ -1,15 +1,15 @@
 import { ArtistsGrid } from "../ArtistsGrid";
 
-function Hieronymus() {
+function jheronimus() {
   return (
-    <div className="hieronymus artist-page">
+    <div className="jheronimus artist-page">
       <div className="artist-grid-container">
         <div className="grid-element-artist-page artist-title">
           <h1>Jheronimus Bosch</h1>
         </div>
         <div className="grid-element-artist-page grunge-effect artist-img">
           <img
-            src="/artists/profile/hieronymus.jpg"
+            src="/artists/profile/jheronimus.jpg"
             alt=""
             className="distorted distorted-small"
           />
@@ -84,9 +84,9 @@ function Hieronymus() {
         <div className="grid-element-artist-page diagonal-two"></div>
       </div>
 
-      <ArtistsGrid currentSlug="hieronymus" small />
+      <ArtistsGrid currentSlug="jheronimus" small />
     </div>
   );
 }
 
-export default Hieronymus;
+export default jheronimus;

@@ -4,9 +4,9 @@ import { useEffect } from "react";
 const artists = [
   {
     name: "Jheronimus Bosch",
-    slug: "hieronymus",
-    image: "/artists/grid/hieronymus.webp",
-    className: "hieronymus",
+    slug: "jheronimus",
+    image: "/artists/grid/jheronimus.webp",
+    className: "jheronimus",
   },
   {
     name: "Michaël Borremans",

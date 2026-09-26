@@ -11,8 +11,4 @@ calendar admin panel
 /////////
 switch out rineke
 
-change hieronymus for jheronimus
-
-show page on img load? black background for the images probably it is canvas
-
 artist page gallery - overflow x horizontal

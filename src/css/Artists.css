@@ -52,6 +52,7 @@
   position: absolute;
   inset: 0;
   z-index: -1;
+  background-color: var(--primary-color);
 }
 .grid-element-artists:has(.artist-img.active) .image-canvas {
   opacity: 1;

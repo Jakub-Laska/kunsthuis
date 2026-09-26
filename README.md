@@ -12,3 +12,4 @@ calendar admin panel
 switch out rineke
 
 artist page gallery - overflow x horizontal
+slow carousel grunge effect, carousel and scale up on hover

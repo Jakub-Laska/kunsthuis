@@ -146,15 +146,18 @@
     grid-column: 1;
     grid-row: 2;
   }
-  .artist-story {
+  .grid-element-artist-page.diagonal {
     grid-row: 3;
+  }
+  .artist-story {
+    grid-row: 4;
   }
   .artist-para {
     font-size: clamp(18px, 1.5vw, 48px) !important;
     padding: 1em !important;
   }
   .artist-cards {
-    grid-row: 4;
+    grid-row: 5;
     flex-direction: column;
     padding: 3vh 0;
     gap: 3vh;

@@ -1,6 +1,6 @@
 - artist pages
 
-mobile smaller icons etc
+mobile nav icons and text same size
 
 gallery page 5 extra pages with older imgs and onclick modal preview
 
@@ -11,5 +11,6 @@ calendar admin panel
 /////////
 switch out rineke
 
-artist page gallery - overflow x horizontal
-slow carousel grunge effect, carousel and scale up on hover
+profile pic load problem with background and the container has to have fixed size
+
+gallery on click full size modal as a component for every img on click reusable

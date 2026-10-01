@@ -23,6 +23,7 @@
 .grid-container-artists-small .grid-element-artists {
   min-height: 33vh;
 }
+
 .grid-container-artists-small .grid-element-artists img {
   z-index: -1;
   opacity: 0;
@@ -70,7 +71,6 @@
 .grid-element-artist-page {
   min-height: 10vh;
   position: relative;
-  overflow: hidden;
   outline: var(--border);
   outline-offset: -0.5px;
   display: flex;
@@ -78,7 +78,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  z-index: 1;
+  z-index: 2;
 }
 .artist-img {
   grid-row: 1/3;
@@ -119,12 +119,80 @@
   transform: translateY(-3px);
 }
 .artist-gallery {
-  grid-column: 1/3;
-  min-height: 66vh !important;
+  grid-column: 1 / 3;
+  height: 66vh;
+  overflow: hidden;
 }
+
+.artist-gallery-container {
+  width: max-content;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 400vw;
+  animation: carousel 66s linear infinite alternate;
+}
+.artist-gallery-container:hover {
+  animation-play-state: paused;
+}
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-400vw);
+  }
+}
+.artist-gallery-img-container.buffer {
+  flex: 0 0 25vw;
+}
+.artist-gallery-container > * {
+  flex: 0 0 50vw;
+  height: 100%;
+}
+
+.artist-gallery-img-container {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.artist-gallery-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.artist-gallery-img-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  outline: var(--border);
+  outline-offset: -0.5px;
+  pointer-events: none;
+  z-index: 1;
+}
+.artist-gallery-img-container.grunge-effect:hover {
+  filter: none;
+}
+.artist-gallery::-webkit-scrollbar {
+  height: 0;
+}
+
 .grid-element-artist-page.diagonal-two {
   grid-column: 1/3;
 }
+
+.grid-container-artists-small .grid-element-artists img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
 @media (max-width: 768px) {
   .grid-container-artists {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -161,5 +229,25 @@
     flex-direction: column;
     padding: 3vh 0;
     gap: 3vh;
+  }
+  .artist-gallery {
+    height: 50vh;
+  }
+  .artist-gallery-container > * {
+    flex: 0 0 80vw;
+  }
+  .artist-gallery-img-container.buffer {
+    flex: 0 0 40vw;
+  }
+  .artist-gallery-container {
+    margin-left: 700vw;
+  }
+  @keyframes carousel {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-700vw);
+    }
   }
 }

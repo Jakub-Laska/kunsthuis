@@ -80,7 +80,68 @@ function jheronimus() {
           </a>
         </div>
         <div className="grid-element-artist-page diagonal"></div>
-        <div className="grid-element-artist-page artist-gallery">gallery</div>
+
+        <div className="grid-element-artist-page artist-gallery">
+          <div className="artist-gallery-container">
+            <div className="artist-gallery-img-container buffer"></div>
+            <div className="artist-gallery-img-container grunge-effect">
+              <img
+                src="/artists/carousel/jheronimus/one.jpg"
+                alt="De Tuin der Lusten, Jheronimus Bosch, linker deel"
+              />
+            </div>
+            <div className="artist-gallery-img-container grunge-effect">
+              <img
+                src="/artists/carousel/jheronimus/two.jpg"
+                alt="De Tuin der Lusten, Jheronimus Bosch, middenpaneel"
+              />
+            </div>
+            <div className="artist-gallery-img-container grunge-effect">
+              <img
+                src="/artists/carousel/jheronimus/three.jpg"
+                alt="De Tuin der Lusten, Jheronimus Bosch, rechter deel"
+              />
+            </div>
+            <div className="artist-gallery-img-container grunge-effect">
+              <img
+                src="/artists/carousel/jheronimus/four.jpg"
+                alt="Visioen van Tondalus navolger van Jheronimus Bosch"
+              />
+            </div>
+
+            <div className="artist-gallery-img-container grunge-effect">
+              <img
+                src="/artists/carousel/jheronimus/five.jpg"
+                alt="Christus draagt het kruis, schilderij van Jheronimus Bosch"
+              />
+            </div>
+            <div className="artist-gallery-img-container grunge-effect">
+              <img
+                src="/artists/carousel/jheronimus/six.jpg"
+                alt="De Nederdaling ter helle, Jheronimus Bosch"
+              />
+            </div>
+            <div className="artist-gallery-img-container grunge-effect">
+              <img
+                src="/artists/carousel/jheronimus/seven.jpg"
+                alt="De Tuin van Eden, Jheronimus Bosch"
+              />
+            </div>
+            <div className="artist-gallery-img-container grunge-effect">
+              <img
+                src="/artists/carousel/jheronimus/eight.jpg"
+                alt="Visioen van Tondalus navolger van Jheronimus Bosch"
+              />
+            </div>
+            <div className="artist-gallery-img-container grunge-effect">
+              <img
+                src="/artists/carousel/jheronimus/nine.jpg"
+                alt="Rechterpaneel van De Verleiding van de Heilige Antonius, Jheronimus Bosch"
+              />
+            </div>
+            <div className="artist-gallery-img-container buffer"></div>
+          </div>
+        </div>
         <div className="grid-element-artist-page diagonal-two"></div>
       </div>
 

@@ -10,10 +10,10 @@ export function GrungeEffect() {
         <defs>
           <filter
             id="grunge-effect"
-            x="-5%"
-            y="-5%"
-            width="110%"
-            height="110%"
+            x="0"
+            y="0%"
+            width="100%"
+            height="100%"
             colorInterpolationFilters="sRGB"
           >
             {/* 1. ORIGINAL - GRAYSCALE */}
@@ -56,8 +56,6 @@ export function GrungeEffect() {
               <feFuncG type="table" tableValues="0 0.584 0.584" />
               <feFuncB type="table" tableValues="0 0.929 0.929" />
             </feComponentTransfer>
-
-            {/* 6. MIX DUOTONE WITH ORIGINAL */}
           </filter>
         </defs>
       </svg>
